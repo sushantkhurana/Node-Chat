@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Created by Sushant Khurana (www.sukh.us)  -->
+
+<html>
+    <head>
+        <script src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
+        <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+        <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+
+    <body>
+        <h1>Node Chat Application - (c) Sushant Khurana</h1><br/>
+        <div class='add_user well'>
+            <label>Enter Chat Handle</label>
+            <input type="text" class="user_id span3 input-xlarge" placeholder="username"> 
+            <button class="start_chat btn-danger">Start Node chat</button>
+        </div>
+
+        <div class='chatroom hide'>
+            <div class='chat_window'></div>
+            <div class='chat_form'>
+                <input type="text" class="span5 messg" placeholder="enter message">&nbsp 
+                <button class="btn send_chat">Send Message</button>
+            </div>
+        </div>
+        <img class='footer' src="http://m3.licdn.com/media/p/4/000/14d/0e7/27da172.jpg">
+
+        <script src="js/client.js"></script>
+    </body>
+</html>
