@@ -4,8 +4,8 @@ var mongodb = require("mongodb");
 var dba;
 
 exports.connect_db = function(){
-    var DBHOST = '127.0.0.1';
-    var DBPORT = 27017;
+    var DBHOST = 'localhost';
+    var DBPORT = 8001;
     var DBNAME = 'chat_db';
 
     var on_open = function(err, db){
